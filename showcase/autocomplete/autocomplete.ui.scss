@@ -1,0 +1,53 @@
+@import '../../../../../src/common/styles/color_common';
+@import '../../../../../src/common/styles/mixins_common';
+
+.filter {
+  border-bottom: 1px solid $color_lh_grey_4;
+  display: inline-flex;
+  height: 70px;
+  width: 100%;
+}
+
+.input {
+  border: 1px solid $color_lh_grey_4;
+  border-radius: 4px;
+  text-decoration: none;
+  height: 20px;
+  margin: 10px 15px;
+  outline: none;
+  padding: 6px 12px;
+  width: 100%;
+
+  &:focus {
+    box-shadow: 0px 0px 5px 1px rgba(0,0,102,0.5);
+    border: 1px solid $color_lh_blue;
+  }
+}
+
+.container {
+  @include text_normal;
+  color: $color_lh_blue;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  width: 100%;
+}
+
+.list {
+  height: 100%;
+  margin-top: 10px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.item {
+  padding: 5px 15px;
+
+  &:hover {
+    background: $color_lh_grey_7;
+    cursor: pointer;
+  }
+}
